@@ -17,7 +17,7 @@ from openai import OpenAI
 # ============================================================
 
 print("\n" + "=" * 60)
-print("                  BLOOM API CONFIG")
+print("                 AURORA API CONFIG")
 print("=" * 60)
 
 DEEPSEEK_API_KEY = input(
@@ -173,7 +173,7 @@ def api_request(endpoint, query):
             timeout=20,
             headers={
                 "Accept": "application/json",
-                "User-Agent": "BLOOM/1.0"
+                "User-Agent": "AURORA/1.0"
             }
         )
 
@@ -886,7 +886,7 @@ def execute_tool(name, arguments):
 # ============================================================
 
 SYSTEM_PROMPT = """
-Ты — BLOOM Personal OSINT.
+Ты — AURORA Personal OSINT.
 
 Твоя задача — проводить структурированный анализ
 собственных или разрешённых пользователем данных
@@ -1194,7 +1194,7 @@ def ask_deepseek(user_query):
 
 
 # ============================================================
-#                           BLOOM
+#                           AURORA
 # ============================================================
 
 def AI_OSINT():
